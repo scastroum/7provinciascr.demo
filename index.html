@@ -1,12 +1,60 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Awesome Site</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Welcome to 7 Provincias</h1>
-        <p>This is our official site!</p>
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 Provincias Costa Rica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Hero -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?costa-rica,nature');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-5xl md:text-6xl text-white font-bold mb-4">7 Provincias Costa Rica</h1>
+      <p class="text-xl md:text-2xl text-white mb-6">Explora la belleza, cultura y diversidad de cada rincón del país</p>
+      <a href="#provincias" class="bg-white text-green-800 px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-100 transition">Ver Provincias</a>
+    </div>
+  </section>
+
+  <!-- Provincias -->
+  <section id="provincias" class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">Nuestras Provincias</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Provincia -->
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://source.unsplash.com/400x300/?san-jose,costa-rica" alt="San José" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">San José</h3>
+          <p class="text-gray-600">Corazón urbano y cultural del país. Museos, historia y vida moderna.</p>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://source.unsplash.com/400x300/?puntarenas,beach" alt="Puntarenas" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Puntarenas</h3>
+          <p class="text-gray-600">Playas infinitas, atardeceres mágicos y naturaleza exuberante.</p>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://source.unsplash.com/400x300/?guanacaste,costa-rica" alt="Guanacaste" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Guanacaste</h3>
+          <p class="text-gray-600">Cultura sabanera, volcanes y algunas de las mejores playas del país.</p>
+        </div>
+      </div>
+      <!-- Más provincias se pueden agregar aquí -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 text-center">
+    <p class="text-sm text-gray-600">&copy; 2025 7 Provincias Costa Rica. Todos los derechos reservados.</p>
+  </footer>
+</body>
 </html>
